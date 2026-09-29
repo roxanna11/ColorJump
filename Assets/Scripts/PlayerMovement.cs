@@ -17,6 +17,8 @@ public class PlayerMovement : MonoBehaviour
     private void Start()
     {
       rb = GetComponent<Rigidbody>();
+
+        Debug.Log("USE AD for movement - SPACE for jump - access differnent platform colors 1 = blue 2 = red 3= green")
     }
 
 
@@ -64,7 +66,7 @@ public class PlayerMovement : MonoBehaviour
     //Check for groun w/ collision
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.CompareTag("Ground"))
+        if (collision.gameObject.CompareTag("normal") || collision.gameObject.CompareTag("green") || collision.gameObject.CompareTag("blue") || collision.gameObject.CompareTag("red"))
         {
             groundCheck = true;
         }

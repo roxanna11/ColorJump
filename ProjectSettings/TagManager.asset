@@ -5,6 +5,10 @@ TagManager:
   serializedVersion: 3
   tags:
   - Ground
+  - green
+  - blue
+  - red
+  - normal
   layers:
   - Default
   - TransparentFX
@@ -12,10 +16,10 @@ TagManager:
   - Floor
   - Water
   - UI
-  - 
-  - 
-  - 
-  - 
+  - blue
+  - red
+  - green
+  - normal
   - 
   - 
   - 
