@@ -6,7 +6,7 @@ public class PlayerMovement : MonoBehaviour
 {
 
     public float moveSpeed = 5f;
-    public float jumpForce = 5f;
+    public float jumpForce = 8f;
 
     public bool groundCheck;
 
@@ -18,7 +18,7 @@ public class PlayerMovement : MonoBehaviour
     {
       rb = GetComponent<Rigidbody>();
 
-        Debug.Log("USE AD for movement - SPACE for jump - access differnent platform colors 1 = blue 2 = red 3= green")
+        Debug.Log("USE AD for movement - SPACE for jump - access differnent platform colors 1 = blue 2 = red 3= green");
     }
 
 

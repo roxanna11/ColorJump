@@ -11,10 +11,10 @@ GameObject:
   - component: {fileID: 583243247159851073}
   - component: {fileID: 7907243834835078814}
   - component: {fileID: 6893878485929630705}
-  - component: {fileID: 3051494048011658368}
   - component: {fileID: 5588994188138698314}
   - component: {fileID: 5885195203418031946}
   - component: {fileID: 8073015323875642471}
+  - component: {fileID: 1296003580970805931}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -94,21 +94,6 @@ MeshRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &3051494048011658368
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2800665450302787377}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 94ef6ad1e856b884dacab4045b97c00e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
-  moveSpeed: 5
-  jumpForce: 5
-  groundCheck: 0
 --- !u!54 &5588994188138698314
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -175,3 +160,18 @@ MonoBehaviour:
   - red
   - green
   playerCurrentState: 
+--- !u!114 &1296003580970805931
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2800665450302787377}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94ef6ad1e856b884dacab4045b97c00e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
+  moveSpeed: 5
+  jumpForce: 8
+  groundCheck: 0
